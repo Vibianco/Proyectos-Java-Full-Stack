@@ -1,0 +1,34 @@
+.titulo {
+    text-align-last: center;
+    text-decoration-line: underline;
+}
+
+body {
+    background-color: thistle;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+img {
+    height: 300px;
+    width: 300px;
+}
+
+.row {
+    height: 100%;
+    display: flex;
+}
+
+.columnas {
+    padding: 30px;
+    height: 100%;
+}
+
+.izquierda {
+    width: 50%;
+    background-color: skyblue
+}
+
+.derecha {
+    width: 50%;
+    background-color: slategrey;
+}

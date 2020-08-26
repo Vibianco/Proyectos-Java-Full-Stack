@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Suscripción</title>
+</head>
+<body>
+    <div class="titulo">
+        <h1>Suscripción</h1>
+    </div>
+    <div class="form">
+        <form action="form_enviado.php" method="POST">
+            <label for="fname">Nombre:</label>
+            <input type="text" id="fname" name="fname" placeholder="Ingrese su nombre">
+            <br>
+            <br>
+            <label for="lname">Apellido:</label>
+            <input type="text" id="lname" name="lname" placeholder="Ingrese su apellido">
+            <br>
+            <br>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="mail" placeholder="Ingrese su email">
+            <br>
+            <br>
+            <label for="pass">Contraseña:</label>
+            <input type="password" id="pass" name="pass">
+            <br>
+            <br>
+            <label for="age">Edad:</label>
+            <input type="number" id="age" name="age" placeholder="Ingrese su edad">
+            <br>
+            <br>
+            <label for="bdate">Fecha de nacimiento:</label>
+            <input type="date" id="bdate" name="bdate">
+            <br>
+            <br>
+            <p>Género:<br>
+                <input type="radio" name="genero" value="femenino">Femenino<br>
+                <input type="radio" name="genero" value="masculino">Masculino<br>
+                <input type="radio" name="genero" value="otro">Otro<br>
+                </p>
+            <br>
+            <br>
+            <label for="address">Dirección:</label>
+            <input type="text" id="address" name="address" placeholder="Ingrese su dirección">
+            <br>
+            <br>
+            <label for="city">Localidad:</label>
+            <input type="text" id="city" name="city" placeholder="Ingrese la localidad">
+            <br>
+            <br>
+            <label for="prov">Provincia:</label>
+            <input type="text" id="prov" name="prov" placeholder="Ingrese su provincia">
+            <br>
+            <br>
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" value="Argentina">
+            <br>
+            <br>
+            <label for="afi">Afinidad al cine:</label>
+            <input type="range" id="afi" name="afi" min="0" max="100" value="50">
+            <br>
+            <br>
+            <p>
+                Intereses:<br>
+                <input type="checkbox" name="intereses" value="accion">Acción<br>
+                <input type="checkbox" name="intereses" value="drama">Drama<br>
+                <input type="checkbox" name="intereses" value="infantiles">Infantiles<br>
+                <input type="checkbox" name="intereses" value="terror">Terror<br>
+                <input type="checkbox" name="intereses" value="otros">Otros
+            </p>
+            <br>
+            <input type="submit" value="Enviar">
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>
