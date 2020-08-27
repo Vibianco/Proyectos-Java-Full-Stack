@@ -19,71 +19,69 @@
         <br>
     </header>
     <menu>
-      <p align=center>&nbsp;</p>
-      <h1 align=center><font size="+1">Los datos de tu formulario han sido enviados con éxito<br>¡Muchas gracias!
-      </font></h1>
+    <p align=center>&nbsp;</p>
+    <h1 align=center><font size="+1">Su formulario fue enviado con éxito<br>¡Muchas gracias!</font></h1>
+    <table border="1" align=center width="226">
+      <tr>
+      <th align="center">Form Field</th>
+      <th align="center">Field Value</th>
+      </tr>
       
-      <table border="1" align=center width="226">
-        <tr>
-          <th align="center">Campo</th>
-          <th align="center">Valor</th>
-        </tr>
-      
-      <script language="javascript">
-      var args = location.search.substr(1).split('&');
-      for (var i = 0; i < args.length; ++i) {
-        var parts = args[i].split('=');
-        if (parts != null) {
-          var field = parts[0];
-          var value = parts[1];
-          if (value == null) {
-            value = "null"
-          }
-          else {
-            value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
-          }
-      
-          document.writeln('<tr><td align="center">' + field + '</td>');
-          document.writeln('<td align="center">' + value + '</td></tr>');
+    <script language="javascript">
+    var args = location.search.substr(1).split('&');
+    for (var i = 0; i < args.length; ++i) {
+      var parts = args[i].split('=');
+      if (parts != null) {
+        var field = parts[0];
+        var value = parts[1];
+        if (value == null) {
+          value = "null"
         }
+        else {
+          value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+        }
+      
+        document.writeln('<tr><td align="center">' + field + '</td>');
+        document.writeln('<td align="center">' + value + '</td></tr>');
       }
-      </script>
+    }
+    </script>
       
-      <noscript>
-      <tr><td>
-      <p>You need to turn on Javascript in your browser.</p>
+    <noscript>
+    <tr><td>
+    <p>You need to turn on Javascript in your browser.</p>
       
-      <p>In Microsoft Internet Explorer 4 or greater:</p>
-      <ul>
-      <li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
-      <li>Click on the "Security" tab.</li>
-      <li>Click on the "Custom Level" button. (In IE 4, select "Custom"
-      and then click on "Settings...".)</li>
-      <li>Under "Active scripting" make sure "Enable" is selected.</li>
-      </ul>
+    <p>In Microsoft Internet Explorer 4 or greater:</p>
+    <ul>
+    <li>From the "Tools" menu (in IE 4, it's the "View" menu), select "Internet Options".</li>
+    <li>Click on the "Security" tab.</li>
+    <li>Click on the "Custom Level" button. (In IE 4, select "Custom"
+    and then click on "Settings...".)</li>
+    <li>Under "Active scripting" make sure "Enable" is selected.</li>
+    </ul>
       
-      <p>In Netscape version 4 or greater:</p>
-      <ul>
-      <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
-      <li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
-      <li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
-      <li>Click the <b>OK</b> button.</li>
-      </ul>
+    <p>In Netscape version 4 or greater:</p>
+    <ul>
+    <li>From the <b>Edit</b> menu, select <b>Preferences</b>.</li>
+    <li>In the <b>Category</b> list on the left, click on the word "Advanced".</li>
+    <li>In the panel on the right, make sure "Enable JavaScript" is checked.</li>
+    <li>Click the <b>OK</b> button.</li>
+    </ul>
       
-      </td></tr>
-      </noscript>
+    </td></tr>
+    </noscript>
       
-      </table> 
+    </table>
 
     </menu>
     <footer style="background-color: pink; text-align: center;">
-        <br>
-        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
-        <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
-        <br>
-        <p>Derechos reservados @2020 Viviana Bianco</p>
-        <br>
+      <br>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+      <br>
+      <p>Derechos reservados @2020 Viviana Bianco</p>
+      <br>
     </footer>
-</body>
+  </body>
 </html>
