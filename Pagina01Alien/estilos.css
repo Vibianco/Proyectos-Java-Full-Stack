@@ -32,3 +32,39 @@ img {
     width: 50%;
     background-color: slategrey;
 }
+
+h1:first-letter{
+    color: blueviolet;
+}
+
+h2:first-letter{
+    color: darkslateblue;
+}
+
+tr:first-of-type{
+    color: blueviolet;
+}
+
+tr:last-child{
+    color: crimson;
+}
+
+ol li{
+    color: darkmagenta;
+}
+
+a:hover{ 
+    text-decoration: overline;
+    background-color: brown;
+  }
+  a:active{ 
+    background-color: yellow;
+  }
+  a:link{ 
+    color: green;
+  }
+  
+  p:after {
+    content: "challenge css";
+    color: blue;
+  }
