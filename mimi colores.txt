@@ -1,0 +1,7 @@
+hover, boton: #fd9b9b
+
+boton hover: #fd8282
+
+boton click: #fc6f6f
+
+not disabled: #fa6363

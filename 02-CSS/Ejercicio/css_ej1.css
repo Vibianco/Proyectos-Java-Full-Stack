@@ -1,0 +1,20 @@
+.rojo{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    color: yellow;
+    display: inline-block;
+}
+
+.negro{
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    color: white;
+    display: inline-block;
+}
+
+p{
+    margin: 0% auto;
+    font: bold;
+}

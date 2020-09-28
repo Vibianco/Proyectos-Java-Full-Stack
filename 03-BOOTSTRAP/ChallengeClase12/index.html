@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet"> 
+        <script src="https://kit.fontawesome.com/b3a3486e13.js" crossorigin="anonymous"></script>
+        <title>Challenge Bootstrap | Bianco</title>
+    </head>
+    <body>
+        <style>
+            .altura{
+                display: flex;
+            }
+            body{
+                background-color: #fdc7c3;
+            }
+            .login{
+                color: #f67d79;
+                background-color: #fcdada;
+            }
+            .login h1{
+                font-family: 'Sacramento', cursive;
+            }
+        </style>
+
+        <div class="container">
+            <div class="row altura pt-5">
+                <div class="col-12 col-md-4 d-none d-md-block offset-md-2">
+                    <img src="img/social2.gif" alt="Social Media">
+                </div>
+                <div class="col-12 col-md-4 login border border-white text-center py-4 px-5">
+                    <div class="row justify-content-center mt-3">
+                    <img src="img/logo2.gif" alt="Social Media" width="150px" class="rounded">
+                    </div>
+                    <div class="row mt-4 mb-4">
+                    <h1>Challenge Java Comisión 2011</h1>
+                    </div>
+                    <div class="row">
+                    <button type="button" class="btn btn-primary btn-lg btn-block ml-3 mr-3 mb-2">Conectar con <i class="fab fa-google"></i>oogle</button>
+                    </div>
+                    <div class="my-3">O</div>
+                    <form class="needs-validation" novalidate="" action="">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="mail" placeholder="Correo electrónico" value="" required="">
+                        </div>
+                        <div class="invalid-feedback">Por favor ingrese un correo electrónico válido.</div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="name" placeholder="Nombre completo" value="" required="">
+                        </div>
+                        <div class="invalid-feedback">Por favor ingrese su nombre.</div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="user" placeholder="Nombre de usuario" value="" required="">
+                        </div>
+                        <div class="invalid-feedback">Nombre de usuario no válido. Intente de nuevo</div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="pass" placeholder="contraseña" value="" required="">
+                        </div>
+                        <div class="invalid-feedback">Por favor ingrese una contraseña.</div>
+                        <div class="form-group mt-4">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Registrarse</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Script form -->
+        <script>
+            (function() {
+              'use strict';
+              window.addEventListener('load', function() {
+                var forms = document.getElementsByClassName('needs-validation');
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                  form.addEventListener('submit', function(event) {
+                    if (form.checkValidity() === false) {
+                      event.preventDefault();
+                      event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                  }, false);
+                });
+              }, false);
+            })();
+            </script>
+
+        <!-- Bootstrap -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>

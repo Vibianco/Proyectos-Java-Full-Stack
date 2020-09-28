@@ -1,272 +1,561 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/b3a3486e13.js" crossorigin="anonymous"></script>
-    <title>Mimi's Handmade</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/b3a3486e13.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <title>Mimi's Handmade</title>
 </head>
 
 <body>
-    <!-- Estilo -->
-    <style>
-        .carr {
-    display: flex;
-    max-width: 100%;
-    max-height: 100%;
-    }
-    </style>
+  <!-- Estilos -->
+  <style>
+    #index-jumbotron{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.767), rgba(255, 255, 255, 0.767)), url(img/us2.jpg);
+    background-size: 100% 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+  }
+  </style>
 
-    <!-- Menú de navegación -->
-    <nav class="sticky-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-4 text-center p-2">
-                    <img src="img/logo_sm.png" alt="Mimi's Handmade">
-                </div>
-                <div class="col-12 col-md-8 text-right d-none d-md-block">
-                    <ul>
-                        <li>Inicio</li>
-                        <li>Tienda</li>
-                        <li>Servicios</li>
-                        <li>Quiénes somos</li>
-                </div>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Header (carrusel) -->
-    <header>
-        <div class="container-fluid h-100">
-            <div class="row h-100">
-                <div class="col-12">
-                <!--Carousel Wrapper-->
-                <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
-                <!--Indicators-->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-                 </ol>
-                 <!--/.Indicators-->
-                <!--Slides-->
-                <div class="carousel-inner" role="listbox">
-                    <!--First slide-->
-                    <div class="carousel-item active">
-                    <img class="d-block w-100" src="img/carru3.jpg" alt="First slide">
-                </div>
-                <!--/First slide-->
-                <!--Second slide-->
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/carru2.jpg" alt="Second slide">
-                    </div>
-                <!--/Second slide-->
-                <!--Third slide-->
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="img/carru1.jpg" alt="Third slide">
-                    </div>
-                <!--/Third slide-->
-                </div>
-                <!--/.Slides-->
-                <!--Controls-->
-                <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-                </a>
-                <!--/.Controls-->
-                </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- Main -->
-    <main>
-        <!-- Tienda -->
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <!--Carousel Wrapper-->
-<div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
-
-    <!--Controls-->
-    <div class="controls-top">
-      <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
-      <a class="btn-floating" href="#multi-item-example" data-slide="next"><i
-          class="fas fa-chevron-right"></i></a>
-    </div>
-    <!--/.Controls-->
-  
-    <!--Indicators-->
-    <ol class="carousel-indicators">
-      <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
-      <li data-target="#multi-item-example" data-slide-to="1"></li>
-      
-    </ol>
-    <!--/.Indicators-->
-  
-    <!--Slides-->
-    <div class="carousel-inner" role="listbox">
-  
-      <!--First slide-->
-      <div class="carousel-item active">
-  
-        <div class="col-md-3" style="float:left">
-         <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-3" style="float:left">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-3" style="float:left">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-        
-         <div class="col-md-3" style="float:left">
-         <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-      </div>
-      <!--/.First slide-->
-  
-      <!--Second slide-->
-      <div class="carousel-item">
-  
-        <div class="col-md-3" style="float:left">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(60).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-3" style="float:left">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-        <div class="col-md-3" style="float:left">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(48).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-        
-        <div class="col-md-3" style="float:left">
-          <div class="card mb-2">
-            <img class="card-img-top"
-              src="https://mdbootstrap.com/img/Photos/Horizontal/City/4-col/img%20(47).jpg" alt="Card image cap">
-            <div class="card-body">
-              <h4 class="card-title">Card title</h4>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                card's content.</p>
-              <a class="btn btn-primary">Button</a>
-            </div>
-          </div>
-        </div>
-  
-      </div>
-      <!--/.Second slide-->
-  
-     
-  
-    </div>
-    <!--/.Slides-->
-  
-  </div>
-  <!--/.Carousel Wrapper-->
-                
-                </div>
-            </div>
-        </div>
-        <!-- Servicios -->
-        <div class="container">
-            <div class="row">
-                <p>Acá se explican los servicios</p>
-            </div>
-        </div>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row border-top">
-                <p>Derechos reservados blabla</p>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-facebook-square"></i>
-                <i class="fab fa-twitter-square"></i>
-                <i class="fab fa-whatsapp"></i>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Acá colocar el chat de ayuda que va abajo a la derecha -->
+  <!-- Menú de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark darkpink-bg sticky-top mt-0 mb-0 pt-0 pb-0">
+    <a class="navbar-brand" href="#"><img src="img/logo_sm.png" alt="Logo" height="80"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
     
-    <!-- Bootstrap -->
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Tienda</a>
+          <div class="dropdown-menu darkpink-bg" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#tienda">Carteras</a>
+            <a class="dropdown-item" href="#tienda">Vestidos</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#tienda">Sale</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#servicios">Servicios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#quienes">Quiénes somos</a>
+        </li> 
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="" data-toggle="modal" data-target="#loginModal">Ingresar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i></a>
+              </li>
+            </ul>
+        </div>
+        <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline my-2 my-sm-0" type="submit">Buscar</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Header (carrusel) -->
+  <header>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 mb-5">
+          <!--Carousel Wrapper-->
+          <div id="carousel-header" class="carousel slide carousel-fade" data-ride="carousel">
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-header" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-header" data-slide-to="1"></li>
+              <li data-target="#carousel-header" data-slide-to="2"></li>
+            </ol>
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+              <!--First slide-->
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="img/carru3.jpg" alt="First slide">
+              </div>
+              <!--Second slide-->
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/carru2.jpg" alt="Second slide">
+              </div>
+              <!--Third slide-->
+              <div class="carousel-item">
+                <img class="d-block w-100" src="img/carru1.jpg" alt="Third slide">
+              </div>
+            </div>
+            <!--Controls-->
+            <a class="carousel-control-prev" href="#carousel-header" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel-header" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <!-- Tienda -->
+    <div class="container" id="tienda">
+      <div class="row">
+        <div class="col text-center">
+          <h1 class="mb-5">Tienda</h1>
+          <!--Carousel Wrapper-->
+          <div id="carousel-shop" class="carousel slide carousel-multi-item" data-ride="carousel">
+            <!--Indicators-->
+            <ol class="carousel-indicators">
+              <li data-target="#carousel-shop" data-slide-to="0" class="active"></li>
+              <li data-target="#carousel-shop" data-slide-to="1"></li>
+            </ol>
+            <!--Slides-->
+            <div class="carousel-inner" role="listbox">
+              <!--First slide-->
+              <div class="carousel-item active">
+                <h2 class="text-center text-uppercase">Sale!</h2>
+                <div class="card-deck">
+                  <div class="col-md-4 mt-5" style="float:left">
+                    <div class="card mb-2">
+                      <div class="card-img-caption">
+                        <p class="card-text">
+                          <button type="button" class="btn btn-secondary btn-sm disabled mr-4 mt-2">25% OFF</button>
+                        </p>
+                        <a href="#" class="column col-xs-6" id="caption"><span class="text text-uppercase"><h2>Añadir</h2><h2><i class="fas fa-shopping-cart"></i></h2></span><img class="card-img-top" src="img/vesti1.jpg"></a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Vestido Bonita
+                          <br>
+                          <span class="old-price">$2000</span>
+                          <br>
+                          $1500
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mt-5" style="float:left">
+                    <div class="card mb-2">
+                      <div class="card-img-caption">
+                        <p class="card-text">
+                          <button type="button" class="btn btn-secondary btn-sm disabled mr-4 mt-2">25% OFF</button>
+                        </p>
+                        <a href="#" class="column col-xs-6" id="caption"><span class="text text-uppercase"><h2>Añadir</h2><h2><i class="fas fa-shopping-cart"></i></h2></span><img class="card-img-top" src = "img/vesti2.jpg"></a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Vestido Bonita
+                          <br>
+                          <span class="old-price">$2000</span>
+                          <br>
+                          $1500
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-md-4 mt-5" style="float:left">
+                    <div class="card mb-2">
+                      <div class="card-img-caption">
+                        <p class="card-text">
+                          <button type="button" class="btn btn-secondary btn-sm disabled mr-4 mt-2">25% OFF</button>
+                        </p>
+                        <a href="#" class="column col-xs-6" id="caption"><span class="text text-uppercase"><h2>Añadir</h2><h2><i class="fas fa-shopping-cart"></i></h2></span><img class="card-img-top" src = "img/vesti3.jpg"></a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Vestido Bonita
+                          <br>
+                          <span class="old-price">$2000</span>
+                          <br>
+                          $1500
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- First slide 2°row -->
+                  <div class="col-md-4 mt-5" style="float:left">
+                    <div class="card mb-2">
+                      <div class="card-img-caption">
+                        <p class="card-text">
+                          <button type="button" class="btn btn-secondary btn-sm disabled mr-4 mt-2">25% OFF</button>
+                        </p>
+                        <a href="#" class="column col-xs-6" id="caption"><span class="text text-uppercase"><h2>Añadir</h2><h2><i class="fas fa-shopping-cart"></i></h2></span><img class="card-img-top" src="img/bolso1.jpg"></a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Cartera Bonita
+                          <br>
+                          <span class="old-price">$2000</span>
+                          <br>
+                          $1500
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mt-5" style="float:left">
+                    <div class="card mb-2">
+                      <div class="card-img-caption">
+                        <p class="card-text">
+                          <button type="button" class="btn btn-secondary btn-sm disabled mr-4 mt-2">25% OFF</button>
+                        </p>
+                        <a href="#" class="column col-xs-6" id="caption"><span class="text text-uppercase"><h2>Añadir</h2><h2><i class="fas fa-shopping-cart"></i></h2></span><img class="card-img-top" src = "img/bolso2.jpg"></a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Cartera Bonita
+                          <br>
+                          <span class="old-price">$2000</span>
+                          <br>
+                          $1500
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mt-5" style="float:left">
+                    <div class="card mb-2">
+                      <div class="card-img-caption">
+                        <p class="card-text">
+                          <button type="button" class="btn btn-secondary btn-sm disabled mr-4 mt-2">25% OFF</button>
+                        </p>
+                        <a href="#" class="column col-xs-6" id="caption"><span class="text text-uppercase"><h2>Añadir</h2><h2><i class="fas fa-shopping-cart"></i></h2></span><img class="card-img-top" src = "img/bolso3.jpg"></a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Cartera Bonita
+                          <br>
+                          <span class="old-price">$2000</span>
+                          <br>
+                          $1500
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--Second slide-->
+              <div class="carousel-item">
+                <h2 class="text-center text-uppercase">Destacados</h2>
+                <div class="card-deck">
+                  <div class="col-md-4 mt-5" style="float:left">
+                    <div class="card mb-2">
+                      <div class="card-img-caption">
+                        <a href="#" class="column col-xs-6" id="caption"><span class="text text-uppercase"><h2>Añadir</h2><h2><i class="fas fa-shopping-cart"></i></h2></span><img class="card-img-top" src = "img/bolso1.jpg"></a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Cartera Pink
+                          <br>
+                          <span class="old-price d-none">$2000</span>
+                          <br>
+                          $1500
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-md-4 mt-5" style="float:left">
+                    <div class="card mb-2">
+                      <div class="card-img-caption">
+                        <a href="#" class="column col-xs-6" id="caption"><span class="text text-uppercase"><h2>Añadir</h2><h2><i class="fas fa-shopping-cart"></i></h2></span><img class="card-img-top" src = "img/bolso2.jpg"></a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Cartera Pink
+                          <br>
+                          <span class="old-price d-none">$2000</span>
+                          <br>
+                          $1500
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+  
+                  <div class="col-md-4 mt-5" style="float:left">
+                    <div class="card mb-2">
+                      <div class="card-img-caption">
+                        <a href="#" class="column col-xs-6" id="caption"><span class="text text-uppercase"><h2>Añadir</h2><h2><i class="fas fa-shopping-cart"></i></h2></span><img class="card-img-top" src = "img/bolso3.jpg"></a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Cartera Pink
+                          <br>
+                          <span class="old-price d-none">$2000</span>
+                          <br>
+                          $1500
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!--Second slide 2°row-->
+                  <div class="col-md-4 mt-5" style="float:left">
+                    <div class="card mb-2">
+                      <div class="card-img-caption">
+                        <a href="#" class="column col-xs-6" id="caption"><span class="text text-uppercase"><h2>Añadir</h2><h2><i class="fas fa-shopping-cart"></i></h2></span><img class="card-img-top" src = "img/vesti1.jpg"></a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Vestido Pink
+                          <br>
+                          <span class="old-price d-none">$2000</span>
+                          <br>
+                          $1500
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mt-5" style="float:left">
+                    <div class="card mb-2">
+                      <div class="card-img-caption">
+                        <a href="#" class="column col-xs-6" id="caption"><span class="text text-uppercase"><h2>Añadir</h2><h2><i class="fas fa-shopping-cart"></i></h2></span><img class="card-img-top" src = "img/vesti2.jpg"></a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Vestido Pink
+                          <br>
+                          <span class="old-price d-none">$2000</span>
+                          <br>
+                          $1500
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mt-5" style="float:left">
+                    <div class="card mb-2">
+                      <div class="card-img-caption">
+                        <a href="#" class="column col-xs-6" id="caption"><span class="text text-uppercase"><h2>Añadir</h2><h2><i class="fas fa-shopping-cart"></i></h2></span><img class="card-img-top" src = "img/vesti3.jpg"></a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">Vestido Pink
+                          <br>
+                          <span class="old-price d-none">$2000</span>
+                          <br>
+                          $1500
+                        </p>
+                      </div>
+                    </div>
+                  </div>    
+                </div>
+              </div>
+            </div>
+            <!--Controls-->
+            <div class="controls-top text-center">
+              <div class="row mt-4">
+                <div class="col-6">
+                  <a class="btn-floating" href="#carousel-shop" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                </div>
+              <div class="col-6">
+                <a class="btn-floating" href="#carousel-shop" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+              </div>
+              </div>   
+            </div>
+         </div>       
+        </div>
+      </div>
+      <div class="row justify-content-center mt-4 mb-5">
+        <a href=""><button type="button" class="btn btn-primary btn-lg btn-lg text-uppercase">Ver más productos</button></a>
+      </div>
+    </div>
+
+    <!-- Servicios -->
+    <div class="container mb-5" id="servicios">
+      <h1 class="text-center mb-5">Servicios</h1>
+      <div class="row">
+        <div class="col-12">
+          <div class="jumbotron jumbotron-fluid" id="index-jumbotron">
+            <div class="container text-center">
+              <h1 class="display-3 mb-4">Mimi's Specials</h1>
+              <h3>¡Transformamos nuestras prendas a tu gusto!</h3>
+              <div class="row mt-5 mb-5">
+                <div class="col-4">
+                  <p class="lead">Cambios de color</p>
+                </div>
+                <div class="col-4">
+                  <p class="lead">Cambios de diseño</p>
+                </div>
+                <div class="col-4">
+                  <p class="lead">Prendas a medida</p>
+                </div>
+              </div>
+                <a class="btn btn-primary btn-lg text-uppercase" href="#" role="button">Hacé tu pedido</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quiénes somos -->
+    <div class="container mb-5" id="quienes">
+      <h1 class="text-center mb-5">Quiénes somos</h1>
+        <div class="row">
+          <div class="col-md-4 col-xs-12">
+            <img src="img/us1.jpg" alt="" class="us-img">
+          </div>
+          <div class="col-md-8 col-xs-12 text-justify">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore placeat ipsam odit doloribus velit, at laborum quisquam mollitia praesentium aspernatur quos ratione dicta explicabo? Veniam facere rerum temporibus molestias modi?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam consequuntur quas veniam veritatis perferendis autem temporibus vitae sunt culpa numquam, rerum suscipit impedit esse repudiandae adipisci explicabo minus quo eos.</p>
+            <p><a class="btn btn-primary btn-lg text-uppercase" href="#" role="button">Sucursales</a></p>
+          </div>
+        </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="darkpink-bg text-center pt-3 text-light">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6 col-md-3 mt-2">
+          <h5>Navegación</h5>
+          <ul class="text-left ml-5 footer-icons text-light">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#tienda">Tienda</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#quienes">Quiénes somos</a></li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-md-3 mt-2">
+          <h5>¡Seguinos en nuestras redes!</h5>
+          <div class="row footer-icons">
+            <div class="col-6 text-right">
+              <a href="https://www.facebook.com/vivi.bianco/"><i class="fab fa-facebook"></i></a><br>
+              <a href="https://ar.pinterest.com/vivi21796/"><i class="fab fa-pinterest"></i></a>
+            </div>
+            <div class="col-6 text-left">
+              <a href="https://www.instagram.com/vivbianco/"><i class="fab fa-instagram"></i></a><br>
+              <a href="https://twitter.com/vivbianco"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mt-2">
+          <h5>Medios de pago</h5>
+          <div class="row footer-icons">
+            <div class="col-6 text-right">
+              <i class="fab fa-cc-visa"></i><br>
+            <i class="fab fa-cc-mastercard"></i>
+            </div>
+            <div class="col-6 text-left">
+              <i class="fab fa-cc-paypal"></i><br>
+              <i class="fas fa-money-bill"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3 mt-2">
+          <h5>Contacto</h5>
+          <div class="row footer-icons">
+            <div class="col-4 text-right">
+              <i class="fas fa-phone"></i><br>
+              <i class="fab fa-whatsapp"></i><br>
+              <i class="fas fa-envelope"></i><br>
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="col-8 text-left">
+              <p><a href="tel:1112345678">011-1234-5678</a><br>
+                <a href="https://wa.me/541112345678?text=Escriba%20su%20consulta%20aquí">011-1234-5678</a><br>
+                <a href="mailto:vivi.bianco@outlook.com">vivi.bianco@outlook.com</a><br>
+                <a href="https://www.google.com.ar/maps/place/Bosques+de+Palermo/@-34.5642824,-58.4311978,15z/data=!4m5!3m4!1s0x95bcb59fbd810ab1:0x37e7c1b77bb6f6e!8m2!3d-34.5712404!4d-58.4174529" target="_blank">Calle 10 1234, Palermo</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <p class="small text-center"><a href="https://github.com/Vibianco/">Todos los derechos reservados © Viviana Bianco | Codo a Codo 4.0 2020 | Comisión 2011</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botón Whatsapp -->
+  <div class="position-fixed whatsapp">
+    <a href="https://wa.me/5411234567890?text=Escriba%20su%20consulta%20aquí" class="whatsapp" target="_blank"><i class="fa fa-whatsapp whatsapp-icon"></i></a>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header darkpink-bg text-light">
+          <h3 class="modal-title col-11 text-center" id="loginModalLabel"><img src="img/logo_sm.png" alt="Mimi's Handmade" width="150px" class="rounded"></h3>
+          <button type="button" class="close col-1" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-12 col-md-4 d-none d-md-block offset-md-2">
+                <img src="img/social.gif" alt="Social Media" class="modal-img-height">
+            </div>
+            <div class="col-12 col-md-4 text-center py-4 px-5">
+                <div class="row justify-content-center mt-3 mb-4">
+                  <h1>Iniciar sesión</h1>
+                </div>
+                <div class="row">
+                  <button type="button" class="btn btn-primary btn-lg btn-block ml-3 mr-3 mb-2">Conectar con<br><i class="fab fa-google"></i>oogle</button>
+                </div>
+                <div class="my-3">O</div>
+                <form class="needs-validation" novalidate="" action="">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="mail" placeholder="Correo electrónico" value="" required="">
+                  </div>
+                  <div class="invalid-feedback">Por favor ingrese un correo electrónico válido.</div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="name" placeholder="Nombre completo" value="" required="">
+                  </div>
+                  <div class="invalid-feedback">Por favor ingrese su nombre.</div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="user" placeholder="Nombre de usuario" value="" required="">
+                  </div>
+                  <div class="invalid-feedback">Nombre de usuario no válido. Intente de nuevo</div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="pass" placeholder="contraseña" value="" required="">
+                  </div>
+                  <div class="invalid-feedback">Por favor ingrese una contraseña.</div>
+                    <div class="form-group mt-4">
+                      <button type="submit" class="btn btn-primary btn-lg btn-block">Registrarse</button>
+                    </div>
+                </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer darkpink-bg">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script form -->
+  <script>
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
+    </script>
+
+  <!-- Bootstrap -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
