@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge JS</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/b3a3486e13.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <style>
+.headfoot{
+  background-color: palegreen;
+  text-align: center;
+}
+.destacado{
+  background-color: palevioletred;
+}
+  </style>
+
+  <header class="container-fluid headfoot">
+    <div class="row">
+        <div class="col-sm-12">
+          <h1>Challenge JS</h1>
+        </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-10 col-md-9 col-lg-8">
+        <article>
+          <h2>Últimas entradas</h2>
+          <h2>Saga Alien</h2>
+          <img src="img/aliens.jpg" height="250" width="450" alt="Saga Aliens">
+          <p>La saga de Alien es una saga cinematográfica de ciencia ficción y terror que relata la historia de la teniente Ellen Ripley (protagonizada por Sigourney Weaver) y su lucha contra una forma de vida alienígena, conocida simplemente como el alien o <span id="reemplazando_3" class="destacado">xenomorfo</span>. La serie comenzó en 1979 con la película de 20th Century Fox Alien, el octavo pasajero y a partir de esta se produjeron tres secuelas y dos precuelas, al igual que numerosos cómics, libros y videojuegos basados en la franquicia.</p>
+          <p>Relacionadas con la serie están las películas de Alien vs. Predator <span id="reemplazando" class="destacado">(Alien vs. Predator y Alien vs. Predator: Requiem)</span>, que se basan en la franquicia que hace la combinación del universo de Alien con el de la saga cinematográfica de Depredador.</p>
+          <a href="#" class="btn btn-outline-dark">Leer más</a>
+        </article>
+    
+        <article>
+          <h2>The Witcher</h2>
+          <img src="img/witcher.jpg" height="250" width="450" alt="The Witcher">
+          <p>La Saga de Geralt de Rivia o la Saga del brujo (en polaco, Saga o wiedźminie) es una serie de cuentos y novelas de fantasía heroica creada por el escritor polaco Andrzej Sapkowski. Consta de diez libros (publicados en español como nueve por la editorial <span id="reemplazando_2" class="destacado">Bibliópolis</span>). En ellos se narran las aventuras de una serie de personajes, centrados en torno al brujo Geralt de Rivia, uno de los últimos brujos sobre la tierra. En el universo de Sapkowski los brujos son cazadores de monstruos. Dichos brujos han sido genéticamente modificados en su juventud para desarrollar habilidades sobrenaturales y capacidades superiores de combate. La saga ha sido adaptada a historietas, televisión, juegos de mesa, juegos de cartas, videojuegos, y más recientemente la plataforma de series y películas Netflix lanzó una serie llamada The Witcher.</p>
+          <a href="#" class="btn btn-outline-dark">Leer más</a>
+        </article>
+    
+        <article>
+          <h2>Dragon Age</h2>
+          <img src="img/da.jpg" height="250" width="450" alt="Dragon Age">
+          <p id="dragon">Dragon Age es una serie de videojuegos de rol de alta fantasía creados por BioWare. El primer             juego, Dragon Age: Origins, fue lanzado en <span class="destacado">2009</span>. Dragon Age II, una secuela de Origins, fue lanzado en marzo de 2011. Dragon Age: Inquisition fue lanzado en noviembre de 2014.</p>
+          <p>El escenario de fantasía de la serie también ha sido utilizado por varios otros medios, incluyendo libros y juegos de rol de mesa, y los tres juegos principales se han unido a una variedad de complementos de contenido descargable.</p>
+          <a href="#" class="btn btn-outline-dark mb-3">Leer más</a>
+        </article>
+      </div>
+      <aside class="col-xs-2 col-md-3 col-lg-4">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Películas y series</a>
+              <ul>
+                <li><a href="#">Saga Alien</a></li>
+                <li><a href="#">The Witcher</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Videojuegos</a>
+              <ul>
+                <li><a href="#">The Witcher</a></li>
+                <li><a href="#">Dragon Age</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Suscribirse</a></li>
+            <li><a href="#">Contacto</a></li>
+          </ul>
+          <div class="container mt-3 mb-3 destacado">
+            <h4>Botones nuevos!</h4>
+            <button type="button" onclick="document.write(challenge)">Click acá si no te gustó la página</button>
+            <h4>Datos</h4>
+            <button onclick="getInnerText()">innerText de un párrafo</button>
+            <button onclick="getInnerHTML()">innerHTML de un párrafo</button>
+            <button onclick="getTextContent()">textContent de un párrafo</button>
+          </div>
+        </aside>
+    </div>
+  </div>
+
+<footer class="container-fluid headfoot">
+    <div class="row mt-3">
+        <div class="col-sm-12">
+            <h2>¡Visita nuestras redes!<br>
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+            <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank"><i class="fab fa-youtube"></i></a>
+            </h2>
+        </div>
+    </div>
+</footer>
+
+<script>
+  // Botón borra-HTML
+  var challenge = "Lo siento mucho :(";
+
+  // Alert vs log
+  window.alert("Bienvenido!");
+  console.log("Bienvenido a la consola :)");
+
+  // Prompt
+  var dia = prompt("¿Cómo está el día?");
+  console.log("El día está "+dia);
+
+  // Obtener código HTML
+  function getInnerText() {
+    alert(document.getElementById("dragon").innerText)
+  }
+  function getInnerHTML() {
+    alert(document.getElementById("dragon").innerHTML)
+  }
+  function getTextContent() {
+    alert(document.getElementById("dragon").textContent)
+  }
+
+  // Reemplazar elementos
+  document.getElementById("reemplazando").innerText = "(estoy aquí reemplazando contenido)";
+  document.getElementById("reemplazando_2").innerHTML = "<span class=headfoot>NuevaEdit</span>";
+  document.getElementById("reemplazando_3").textContent = "xenomorfe";
+</script>
+ 
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
