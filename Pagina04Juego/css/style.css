@@ -1,0 +1,17 @@
+#historia{
+  margin-bottom: 15%;
+  margin-top: 1%;
+}
+#historia .btn::first-letter{
+  text-transform: uppercase;
+}
+#historia .btn{
+  padding: 2%;
+  margin-top: 3%;
+}
+footer{
+  position:fixed;
+  bottom: 0;
+  width: 100%;
+  height: 10%;
+}

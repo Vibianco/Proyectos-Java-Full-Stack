@@ -5,7 +5,7 @@ handle = open(file, encoding="utf-8")
 
 print("Generando código...")
 
-btn_p1 = '<button class="btn btn-primary" onclick="opc_'
+btn_p1 = '<button class="btn btn-primary btn-lg btn-block" onclick="opc_'
 btn_p2 = '()">'
 btn_p3 = '</button>'
 
