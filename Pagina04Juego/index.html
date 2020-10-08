@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <title>Elige tu propia aventura</title>
+</head>
+<body>
+  <style>
+    #historia{
+      height: max-content;
+    }
+    footer {
+      position:absolute;
+      bottom:0;
+      width: 100%;
+      height: 10%;
+    }
+    #historia .btn::first-letter{
+      text-transform: uppercase;
+    }
+  </style>
+
+  <header class="container-fluid text-center bg-info pb-3 pt-3">
+    <h1>Elige tu propia aventura</h1>
+    <h2>La cueva del tiempo</h2>
+  </header>
+
+  <div class="container text-justify" id="historia">
+    <p>
+      Te has perdido en una extraña cueva, tenuemente iluminada. Gradualmente empiezas a distinguir dos túneles. Uno de ellos, el de la derecha, forma una curva hacia abajo. El otro sube en pendiente hacia la izquierda…
+    </p>
+    <p>
+      Este es una historia de aventuras. A medida que vayas leyendo, te verás obligado a elegir. De tu decisión depende que la aventura constituya un éxito o un fracaso. Tú serás el responsable del resultado final en base a tus decisiones.
+    </p>
+    <p>
+      Tu elección puede conducirte al desastre… ¡o a un magnífico final!
+    </p>
+    <button class="btn btn-primary" onclick="start()">Comenzar</button> 
+  </div>
+
+  <footer class="container-fluid bg-info d-flex align-items-center justify-content-center">
+    <h5>Viviana Bianco | Codo a Codo 4.0 2020 | Comisión 2011</h5>
+  </footer>
+
+  <script src="js/capitulos.js"></script>
+  <script src="js/jquery-3.5.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

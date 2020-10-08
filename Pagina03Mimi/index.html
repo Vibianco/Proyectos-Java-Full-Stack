@@ -12,15 +12,6 @@
 </head>
 
 <body>
-  <!-- Estilos -->
-  <style>
-    #index-jumbotron{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.767), rgba(255, 255, 255, 0.767)), url(img/us2.jpg);
-    background-size: 100% 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-  }
-  </style>
 
   <!-- Menú de navegación -->
   <nav class="navbar navbar-expand-lg navbar-dark darkpink-bg sticky-top mt-0 mb-0 pt-0 pb-0">
@@ -62,16 +53,14 @@
             </ul>
         </div>
         <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-        <button class="btn btn-outline my-2 my-sm-0" type="submit">Buscar</button>
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
       </form>
     </div>
   </nav>
 
   <!-- Header (carrusel) -->
   <header>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12 mb-5">
+    <div class="container-fluid mb-5 mr-0 pr-0 ml-0 pl-0">
           <!--Carousel Wrapper-->
           <div id="carousel-header" class="carousel slide carousel-fade" data-ride="carousel">
             <!--Indicators-->
@@ -105,8 +94,6 @@
               <span class="sr-only">Siguiente</span>
             </a>
           </div>
-        </div>
-      </div>
     </div>
   </header>
 
@@ -118,7 +105,7 @@
         <div class="col text-center">
           <h1 class="mb-5">Tienda</h1>
           <!--Carousel Wrapper-->
-          <div id="carousel-shop" class="carousel slide carousel-multi-item" data-ride="carousel">
+          <div id="carousel-shop" class="carousel slide carousel-multi-item" data-interval="false">
             <!--Indicators-->
             <ol class="carousel-indicators">
               <li data-target="#carousel-shop" data-slide-to="0" class="active"></li>
@@ -351,10 +338,10 @@
             <div class="controls-top text-center">
               <div class="row mt-4">
                 <div class="col-6">
-                  <a class="btn-floating" href="#carousel-shop" data-slide="prev"><i class="fas fa-chevron-left"></i></a>
+                  <a class="btn-floating" href="#carousel-shop" data-slide="prev"><i class="fas fa-arrow-left"></i></a>
                 </div>
               <div class="col-6">
-                <a class="btn-floating" href="#carousel-shop" data-slide="next"><i class="fas fa-chevron-right"></i></a>
+                <a class="btn-floating" href="#carousel-shop" data-slide="next"><i class="fas fa-arrow-right"></i></a>
               </div>
               </div>   
             </div>
@@ -371,18 +358,18 @@
       <h1 class="text-center mb-5">Servicios</h1>
       <div class="row">
         <div class="col-12">
-          <div class="jumbotron jumbotron-fluid" id="index-jumbotron">
+          <div class="jumbotron jumbotron-fluid" id="index-jumbotron" style="background-image: linear-gradient(rgba(255, 255, 255, 0.767), rgba(255, 255, 255, 0.767)), url(img/servicios.jpg);">
             <div class="container text-center">
-              <h1 class="display-3 mb-4">Mimi's Specials</h1>
+              <h1 class="display-4 mb-4">Mimi's Specials</h1>
               <h3>¡Transformamos nuestras prendas a tu gusto!</h3>
               <div class="row mt-5 mb-5">
-                <div class="col-4">
+                <div class="col-sm-6 col-md-4">
                   <p class="lead">Cambios de color</p>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-6 col-md-4">
                   <p class="lead">Cambios de diseño</p>
                 </div>
-                <div class="col-4">
+                <div class="col-sm-6 col-md-4">
                   <p class="lead">Prendas a medida</p>
                 </div>
               </div>
@@ -403,7 +390,7 @@
           <div class="col-md-8 col-xs-12 text-justify">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore placeat ipsam odit doloribus velit, at laborum quisquam mollitia praesentium aspernatur quos ratione dicta explicabo? Veniam facere rerum temporibus molestias modi?</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam consequuntur quas veniam veritatis perferendis autem temporibus vitae sunt culpa numquam, rerum suscipit impedit esse repudiandae adipisci explicabo minus quo eos.</p>
-            <p><a class="btn btn-primary btn-lg text-uppercase" href="#" role="button">Sucursales</a></p>
+            <p class="text-center"><a class="btn btn-primary btn-lg text-uppercase" href="#" role="button">Sucursales</a></p>
           </div>
         </div>
     </div>
@@ -526,9 +513,6 @@
                 </form>
             </div>
           </div>
-        </div>
-        <div class="modal-footer darkpink-bg">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
         </div>
       </div>
     </div>
