@@ -1,28 +1,28 @@
-function validar(){
+document.addEventListener("DOMContentLoaded", function(){
+  let formu = document.getElementById("formulario");
+  formu.addEventListener('submit', validarForm);
+});
 
-  user = document.getElementById('user').value;
-  pass = document.getElementById('pass').value;
+function validarForm(evento){
+  evento.preventDefault();
+  var user = document.getElementById("user").value;
+  var password = document.getElementById("password").value;
 
-  console.log("Usuario: "+user);
-  console.log("Contraseña: "+pass);
-
-  pipi = user.includes('@');
-  console.log(pipi);
-
-  console.log("Caracteres user: "+user.length);
-  console.log("Caracteres pass: "+pass.length);
-
-  switch (user,pass) {
-    case '','':
-      console.log("No se completaron los datos");
-      break;
-    case "hola","hola":
-      console.log("hola");
-      break;
-    default:
-      console.log("Estamos en el caso por default");
-      break;
+  if (user.length === 0){
+    document.getElementById("user").style.border = "3px solid red"; 
+    alert("Debe ingresar un usuario");
+    return; 
   }
-}
+  else if (user.includes('@') === false){
+    document.getElementById("user").style.border = "3px solid red";
+    window.alert("El usuario debe contener un @. Ejemplo: tumail@mail.com");
+    return;
+  }
+  if (password.length < 6){
+    document.getElementById("password").style.border = "3px solid red"; 
+    alert("Debe ingresar una contraseña de al menos 6 caracteres");
+    return;
+  }
 
-// Mediante el uso del evento que se ejecuta en el momento del envío del formulario se valide que los cuadros de texto correspondientes a “usuario y clave” no se encuentren vacíos y que el cuadro de texto del “usuario” incluya un arroba. Si ambos campos no se validan correctamente el formulario no debe enviarse y deberá desplegarse una ventana indicando el motivo por el cual no puede ingresar por ej: “Falta el arroba en el usuario”
+  this.submit(alert("Gracias por registrarse"));
+}

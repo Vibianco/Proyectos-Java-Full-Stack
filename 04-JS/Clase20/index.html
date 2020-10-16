@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Agregamos estilos de bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>JavaScript FULLSTACK CODO A CODO 4.0 </title>
+</head>
+<body onload="cambioDeColor();">
+  <!-- Aca arranca nustro header -->
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 bg-primary p-5 text-center">
+          <h1 class=" text-white">Codo a Codo Java FULLSTACK JS </h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Main  -->
+  <main>
+    <!-- Formulario de validación -->
+    <div class="container">
+      <div class="row py-3">
+        <div class="col-12 p-0">
+          <div class="container text-center">
+            <div id="mi_mensaje">
+              <p>
+                <h1>ESTE ES UN MENSAJE BRISHANTE</h1>
+              </p>
+            </div>
+            <form id="formulario">
+              <div class="form-group row">
+                <div class="col-sm-4 col-form-label"></div>
+                <label for="usuario" class="col-sm-2 col-form-label"><b>Usuario: </b></label>
+                <div class="col-sm-3">
+                  <input type="usuario" class="form-control" id="usuario" placeholder="usuario@mail.com">
+                </div>
+                <div class="col-sm-4 col-form-label"></div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-4 col-form-label"></div>
+                <label for="password" class="col-sm-2 col-form-label"><b>Contraseña: </b></label>
+                <div class="col-sm-3">
+                  <input type="password" class="form-control" id="password" placeholder="******">
+                </div>
+                <div class="col-sm-4 col-form-label"></div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-5 col-form-label"></div>
+                <div class="col-sm-2">
+                  <button type="submit" class="btn btn-primary">Ingresar</button>
+                </div>
+              </div>
+            </form>
+            <button onclick="detenerCambioDeColor();" class="btn btn-danger">DETENER!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Imagen gif -->
+    <div class="container">
+      <div class="row py-3">
+        <div class="col-12 p-0">
+          <img src="https://miro.medium.com/max/3200/1*OF0xEMkWBv-69zvmNs6RDQ.gif" class="img-fluid rounded" alt="JUG">
+          <h3 class="pt-2 text-danger"> JavaScript CON LES ALUMNES </h3>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer-->
+  <footer>
+    <div class="continer-fluid">
+      <div class="row bg-dark">
+        <div class="col-12 p-4 text-right">
+          <p class="h5 text-light m-0 p-0">Diseño web, todos los derechos reservados.Codo a Codo Java Full Stack</p>
+        </div>
+      </div>
+  </footer>
+
+  <!-- Mis funciones en JS -->
+  <script src="js/funciones.js"></script>
+
+  <!-- Agregamos Scripts  de Bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

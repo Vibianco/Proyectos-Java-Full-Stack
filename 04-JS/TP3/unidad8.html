@@ -6,16 +6,114 @@
   <title>Viviana Bianco | TP 3 JavaScript | Codo a Codo 2020</title>
 </head>
 <body>
-  <h1>Ingreso al Sistema</h1>
-  <label for="user">Usuario:</label>
-  <input type="text" id="user" name="user" placeholder="usu@rio">
-  <br>
-  <label for="pass">Clave:</label>
-  <input type="password" id="pass" name="pass" placeholder="clave">
-  <br>
-  <input type="submit" value="Ingresar" onclick="validar()">
+<style>
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-  <script src="control.js"></script>
+body {
+  padding: 20px 15%;
+}
+form header {
+  margin: 0 0 25px 0; 
+  text-align: center;
+}
+form > div {
+  clear: both;
+  overflow: hidden;
+  padding: 1px;
+  margin: 0 0 10px 0;
+}
+form > div > fieldset > div > div {
+  margin: 0 0 5px 0;
+}
+form > div > label,
+legend {
+	width: 25%;
+  float: left;
+  padding-right: 10px;
+}
+form > div > div,
+form > div > fieldset > div {
+  width: 75%;
+  float: right;
+}
+form > div > fieldset label {
+	font-size: 90%;
+}
+fieldset {
+	border: 0;
+  padding: 0;
+}
+
+input {
+	width: 100%;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+input {
+  width: 50%;
+}
+input:focus {
+  outline: 0;
+  border-color: #4697e4;
+}
+
+@media (max-width: 600px) {
+  form > div {
+    margin: 0 0 15px 0; 
+  }
+  form > div > label,
+  legend {
+	  width: 100%;
+    float: none;
+    margin: 0 0 5px 0;
+  }
+  form > div > div,
+  form > div > fieldset > div {
+    width: 100%;
+    float: none;
+  }
+  input {
+    width: 100%; 
+  }
+}
+@media (min-width: 1200px) {
+  form > div > label,
+	legend {
+  	text-align: right;
+  }
+}
+</style>
+
+<form id="formulario">
+  <header>
+    <h1>Ingreso al Sistema</h1>
+  </header>
+  <div>
+    <label class="desc" for="user">Usuario:</label>
+    <div>
+      <input id="user" type="text" placeholder="usuario@mail.com">
+    </div>
+  </div>
+  <div>
+    <label class="desc" for="password">Clave:</label>
+    <div>
+      <input id="password" type="password" placeholder="********"> 
+   </div>
+  </div>
+  <div>
+		<div>
+  		<button type="submit">Ingresar</button>
+    </div>
+	</div>
+</form>
+
+<script src="control.js"></script>
 
 </body>
 </html>
