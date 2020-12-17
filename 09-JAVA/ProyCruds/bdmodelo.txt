@@ -1,0 +1,22 @@
+base de datos:
+
+prestamos
+
+tablas:
+
+application
+
+login
+
+persons
+
+productos
+ - ObjectId
+ - nombre String
+ - descripcion String
+ - marca String
+ - precio Double
+ - cantidad Int32
+
+
+provinces
